@@ -133,6 +133,14 @@ table td {
   padding: 3px 2px;
 }
 }
+@media (max-width:412px) {
+   table thead , table tbody {
+    font-size: 8px;
+   }
+   table td {
+    padding: 0px;
+}
+}
 
 
 
