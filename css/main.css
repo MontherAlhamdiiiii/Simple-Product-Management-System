@@ -1,0 +1,131 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px){
+  .container {
+     width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px){
+  .container {
+    width: 970px;
+  }
+}
+/* Large  */
+@media (min-width: 1200px){
+  .container {  
+     width: 1170px;
+  }
+}
+
+/* main styles */
+
+.main {
+  background-color: rgb(32, 32, 32);
+  min-height: 100vh;
+}
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  padding: 20px 0px 0px;
+}
+
+form {
+
+}
+
+input , .box div{
+   background-color: black;
+   outline: none;
+   border: none;
+   border-radius: 6px;
+   padding: 10px;
+   margin: 5px 0px;
+}
+button {
+  background-color: blueviolet;
+   outline: none;
+   border: none;
+   border-radius: 6px;
+   padding: 10px;
+      margin: 5px 0px;
+}
+/* Title */
+input[placeholder="Title"] {
+  width: 100%;
+}
+
+/* Total Input  */
+.box div {
+  display: inline;
+  background-color: red;
+}
+/* Title Boxes */
+.box input, .box div {
+  width: calc(100% / 5 - 4px);
+}
+.box div::before {
+  content: "Total : ";
+}
+/* Two Boxes */ /* Create Button */
+input[placeholder="Category"] , #search , input[placeholder="Category"] + button , input[placeholder="Count"]{
+   width: calc(100%);
+}
+/* Search Buttons */
+.button-box button{
+  width: calc(100%/2 - 3px);
+}
+/* Delete All */
+ form > button:last-child {
+  width: 100%;
+}
+
+/* Table Styles */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+table thead {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+table td {
+  padding: 0px 15px;
+}
+@media (max-width:767px) {
+   table thead , table tbody {
+    font-size: 11px;
+   }
+   table td {
+  padding: 3px 2px;
+}
+}
+
+
+
+
+
+
+
