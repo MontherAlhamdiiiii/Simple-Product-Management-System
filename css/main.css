@@ -87,7 +87,7 @@ input[placeholder="Title"] {
 .box div::before {
   content: "Total : ";
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .box input {
       width: calc(100% / 4 - 4px);
   }
@@ -125,7 +125,7 @@ table thead {
 table td {
   padding: 0px 15px;
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
    table thead , table tbody {
     font-size: 11px;
    }
