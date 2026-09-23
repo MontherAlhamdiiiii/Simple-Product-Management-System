@@ -83,8 +83,19 @@ input[placeholder="Title"] {
 .box input, .box div {
   width: calc(100% / 5 - 4px);
 }
+
 .box div::before {
   content: "Total : ";
+}
+@media (max-width: 767px) {
+  .box input {
+      width: calc(100% / 4 - 4px);
+  }
+  .box div {
+    display: block;
+    width: 100%;
+    
+  }
 }
 /* Two Boxes */ /* Create Button */
 input[placeholder="Category"] , #search , input[placeholder="Category"] + button , input[placeholder="Count"]{
